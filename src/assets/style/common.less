@@ -1,0 +1,107 @@
+@main-color:#1D4E89;
+@color1:#5388CD;
+@color2:#6CA0DC;
+@color3:#409EFF;
+@bgc1:rgba(0,0,0,0.8);
+@bgc2:#F5F5F5;
+@font1-color:#303133;
+@font2-color:#606266;
+
+//css reset
+//
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  color: #666;
+  //background-color: @bgc2;
+  width: 100%;
+}
+
+a, p,span, h1, h2, h3, h4, h5, h6{
+  //color: @font1-color;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .15s ease-out;
+  &:hover {
+    color: @color2;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  //font-size: 100%;
+  //font-weight: 400;
+  font-weight: normal;
+}
+
+//input,
+//img,
+//button {
+//  border: none;
+//  outline: none;
+//}
+
+//i, em {
+//  font-style: normal;
+//}
+
+//common
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-color{
+  color: @main-color;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.flex{
+  display: flex;
+}
+
+.between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-v-center{
+  display: flex;
+  align-items: center;
+}
+
+.between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-height{
+  height: 100%;
+}
