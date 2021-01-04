@@ -93,8 +93,8 @@
 
         <el-form-item label="权限类型">
           <el-radio-group v-model="addAdminData.authority">
-            <el-radio label="数据管理员" border>数据管理员</el-radio>
-            <el-radio label="系统管理员" border>系统管理员</el-radio>
+            <el-radio label="普通管理员" border>普通管理员</el-radio>
+            <el-radio label="超级管理员" border>超级管理员</el-radio>
           </el-radio-group>
         </el-form-item>
 
@@ -129,8 +129,8 @@
 
         <el-form-item label="权限类型">
           <el-radio-group v-model="editAdminData.authority">
-            <el-radio label="数据管理员" border>数据管理员</el-radio>
-            <el-radio label="系统管理员" border>系统管理员</el-radio>
+            <el-radio label="普通管理员" border>普通管理员</el-radio>
+            <el-radio label="超级管理员" border>超级管理员</el-radio>
           </el-radio-group>
         </el-form-item>
 

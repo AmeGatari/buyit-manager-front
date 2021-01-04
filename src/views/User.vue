@@ -47,12 +47,12 @@
           fixed="right"
           width="220">
         <template slot="header">
-          <el-button type="primary" round @click="addUserDialogFormVisible=true">添加用户</el-button>
+          <el-button type="primary" round @click="addUserDialogFormVisible=true">添加会员用户</el-button>
         </template>
 
         <template slot-scope="scope">
 
-          <el-tooltip content="修改用户账号信息" placement="top">
+          <el-tooltip content="编辑会员用户信息" placement="top">
             <el-button type="primary" circle plain @click="userEdit(scope.$index, scope.row)">
               <i class="el-icon-edit"></i>
             </el-button>
@@ -98,7 +98,7 @@
     </el-pagination>
 
     <!--用户添加对话框-->
-    <el-dialog title="添加用户" :visible.sync="addUserDialogFormVisible">
+    <el-dialog title="添加会员用户" :visible.sync="addUserDialogFormVisible">
 
       <el-form :model="addUserData" :rules="userRules" ref="addUserData" :inline="true">
 
@@ -127,7 +127,7 @@
     </el-dialog>
 
     <!--用户编辑对话框-->
-    <el-dialog title="编辑用户账号信息" :visible.sync="editUserDialogFormVisible">
+    <el-dialog title="编辑会员用户信息" :visible.sync="editUserDialogFormVisible">
 
       <el-form :model="editUserData" :rules="userRules" ref="editUserData" :inline="true">
 

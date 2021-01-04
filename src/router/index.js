@@ -48,7 +48,7 @@ router.beforeEach((to,from,next)=>{
 
   if(to.path!=='/login'&&window.sessionStorage.getItem("token")===null){
     next('/login')
-  }else if (to.path==='/admin'&&window.sessionStorage.getItem("authority")!=='系统管理员'){
+  }else if (to.path==='/admin'&&window.sessionStorage.getItem("authority")!=='超级管理员'){
     alert('无权限访问！')
     next(from.path)
   } else {

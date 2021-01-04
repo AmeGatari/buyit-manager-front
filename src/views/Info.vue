@@ -43,12 +43,18 @@
       </div>
 
     </div>
+    <Echarts></Echarts>
   </div>
 </template>
 
 <script>
+import Echarts from "@/components/Echarts";
+
 export default {
   name: "Info",
+  components:{
+    Echarts
+  },
   data() {
     return {
       goodCount:0,

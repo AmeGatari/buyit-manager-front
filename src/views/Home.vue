@@ -80,16 +80,16 @@
 
               <template slot="title">
                 <i class="el-icon-user-solid"></i>
-                <span>用户管理</span>
+                <span>会员用户管理</span>
               </template>
 
             </el-menu-item>
 
-            <el-menu-item v-if="admin.authority==='系统管理员'" index="/admin">
+            <el-menu-item v-if="admin.authority==='超级管理员'" index="/admin">
 
               <template slot="title">
                 <i class="el-icon-s-custom"></i>
-                <span>管理员管理</span>
+                <span>管理员账号管理</span>
               </template>
 
             </el-menu-item>
